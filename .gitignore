@@ -30,3 +30,6 @@ Thumbs.db
 *.tmp
 *.swp
 *~
+
+# Spring Initializr generated
+HELP.md
