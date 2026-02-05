@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sirius.demo.mybatis.mapper.UserMapper">
+    <select id="select" resultType="com.sirius.demo.domain.User">
+        select *
+        from user
+    </select>
+
+    <insert id="insert">
+        insert into user(username, password)
+        values (#{username}, #{password})
+    </insert>
+</mapper>
